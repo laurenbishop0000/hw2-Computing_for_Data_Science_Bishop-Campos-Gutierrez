@@ -29,10 +29,6 @@ def has_experience_as(CV, job_title):
             usernames.append(user['user'])
     return usernames
 
-print(has_experience_as([{'user': 'john', 'jobs': ['analyst', 'engineer']},{'user': 'jane', 'jobs': ['finance', 'software']}], 'finance'))
-
-
-
 #
 # 5)
 # Create a function called "job_counts"
@@ -52,10 +48,6 @@ def job_counts(CV):
         dictionary[title] = job_all.count(title)
     
     return dictionary
-
-CV = [{'user': 'john', 'jobs': ['analyst', 'engineer']},{'user': 'jane', 'jobs': ['finance', 'software','analyst']}]
-
-print(job_counts(CV))
 
 #
 # 6)
@@ -80,6 +72,3 @@ def most_popular_job(CV):
             most_popular[1] = j_count[x]
             most_popular[0] = x
     return tuple(most_popular)
-
-
-print(most_popular_job(CV))
